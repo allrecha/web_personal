@@ -156,11 +156,11 @@
     </div>
 
     <div class="cv-modal-body">
-      <iframe
-        src="/cv/adrianLlop_cv.pdf"
-        title="CV de Adrián M. Llop Recha"
-        class="cv-frame"
-      ></iframe>
+    <iframe
+      title="CV de Adrián M. Llop Recha"
+      class="cv-frame"
+      id="cvFrame"
+    ></iframe>
     </div>
   </div>
 </div>
@@ -170,8 +170,10 @@
   const closeCvBtn = document.getElementById("closeCvBtn");
   const cvModal = document.getElementById("cvModal");
   const cvModalBackdrop = document.getElementById("cvModalBackdrop");
+  const cvFrame = document.getElementById("cvFrame");
 
   function openCvModal() {
+    cvFrame.src = "/cv/adrianLlop_cv.pdf";
     cvModal.classList.add("is-open");
     cvModal.setAttribute("aria-hidden", "false");
     document.body.classList.add("modal-open");
@@ -181,6 +183,7 @@
     cvModal.classList.remove("is-open");
     cvModal.setAttribute("aria-hidden", "true");
     document.body.classList.remove("modal-open");
+    cvFrame.src = "";
   }
 
   openCvBtn.addEventListener("click", openCvModal);
