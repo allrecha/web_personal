@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Adrián M. Llop Recha | Data Analyst | R&D Consultant</title>
+  <meta
+    name="description"
+    content="Data Analyst & R&D Consultant. Análisis de datos, I+D, deep tech e innovación aplicada."
+  />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="hero">
+  <div class="container hero-grid">
+
+    <div class="hero-text">
+      <!-- <div class="badge">Zaragoza · Disponible para proyectos y oportunidades</div> -->
+
+      <h1>Adrián M. Llop Recha</h1>
+      <p class="subtitle">Data Analyst | R&amp;D Consultant | PhD en Electrónica </p>  
+
+        <p class="intro">
+  Doctor en Electrónica con experiencia en análisis de datos, modelado y trabajo experimental en entornos de I+D. He trabajado en el desarrollo de modelos basados en IA y en el análisis de señales en proyectos interdisciplinarios internacionales. Ayudo a convertir retos técnicos complejos en análisis claros para tomar decisiones mejor informadas.
+        </p>
+      
+
+      <div class="cta-group">
+        <button class="btn btn-primary" id="openCvBtn" type="button">Ver CV</button>
+        <a href="/cv/adrianLlop_cv.pdf" class="btn btn-secondary" download>Descargar CV</a>
+        <a href="mailto:contact@alloprecha.es" class="btn btn-ghost">Contactar</a>
+      </div>
+    </div>
+
+        <div class="hero-photo-wrap">
+      <img
+        src="img/IMG_0995.jpg"
+        alt="Foto de Adrián M. Llop Recha"
+        class="hero-photo"
+      />
+    </div>
+
+  </div>
+</header>
+  <main>
+    <section class="section">
+      <div class="container grid-3">
+        <article class="card">
+          <h2>Data analysis</h2>
+          <p>
+            Análisis de datos y señales, modelado y validación de modelos en contextos técnicos y experimentales.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>R&amp;D consulting</h2>
+          <p>
+            Experiencia en proyectos interdisciplinarios de I+D, desde análisis y modelado hasta validación experimental y colaboración internacional.
+          </p>
+        </article>
+
+        <article class="card">
+          <h2>Deep-tech background</h2>
+          <p>
+            Doctorado en Electrónica con experiencia en sensores biomédicos, IA aplicada al
+            diseño y trabajo experimental con instrumentación de laboratorio.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container split">
+        <div class="panel">
+          <p class="eyebrow">Experiencia</p>
+          <h3>Lo que aporto</h3>
+            <ul class="list">
+            <li>5+ años como Research Scientist en la Universidad de Oslo</li>
+            <li>Análisis de datos, señales y modelado en proyectos de I+D</li>
+            <li>Experiencia en IA aplicada, sensores biomédicos y trabajo experimental</li>
+            <li>Colaboración internacional entre equipos académicos y técnicos</li>
+            </ul>
+        </div>
+
+        <div class="panel">
+          <p class="eyebrow">Servicios</p>
+          <h3>Cómo puedo ayudar</h3>
+            <div class="tags">
+            <span>Análisis de datos</span>
+            <span>Análisis de señales</span>
+            <span>Modelado</span>
+            <span>IA aplicada</span>
+            <span>I+D tecnológica</span>
+            <span>Transferencia tecnológica</span>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- <section id="cv" class="section">
+      <div class="container cv-box">
+        <div class="cv-header">
+          <div>
+            <p class="eyebrow">CV</p>
+            <h3>Mi carta de presentación</h3>
+            <p>
+              Puedes descargar mi CV completo en PDF para conocer en detalle mi experiencia,
+              formación y trayectoria.
+            </p>
+          </div>
+
+          <a href="CV_Adrian_Llop.pdf" class="btn btn-primary" download>Descargar PDF</a>
+        </div>
+
+        <div class="cv-preview">
+          <p>
+            Aquí puedes incrustar una vista previa del CV o mantener solamente el botón de descarga.
+          </p>
+        </div>
+      </div>
+    </section> -->
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="eyebrow">Contacto</p>
+      <h3>¿Hablamos?</h3>
+      <p class="footer-text">
+        Interesado en oportunidades relacionadas con análisis de datos, consultoria I+D y transferencia tecnológica.
+      </p>
+
+      <div class="cta-group center">
+        <a href="mailto:contact@alloprecha.es" class="btn btn-primary">contact@alloprecha.es</a>
+        <a href="https://www.linkedin.com/in/adrian-llop" class="btn btn-secondary" target="_blank" rel="noopener noreferrer">
+          LinkedIn
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <div class="cv-modal" id="cvModal" aria-hidden="true">
+  <div class="cv-modal-backdrop" id="cvModalBackdrop"></div>
+
+  <div class="cv-modal-dialog" role="dialog" aria-modal="true" aria-labelledby="cvModalTitle">
+    <div class="cv-modal-header">
+      <h2 id="cvModalTitle">Currículum</h2>
+
+      <div class="cv-modal-actions">
+        <a href="/cv/adrianLlop_cv.pdf" class="btn btn-secondary" download>
+          Descargar CV
+        </a>
+        <button class="cv-close" id="closeCvBtn" type="button" aria-label="Cerrar ventana">
+          ×
+        </button>
+      </div>
+    </div>
+
+    <div class="cv-modal-body">
+      <iframe
+        src="/cv/adrianLlop_cv.pdf"
+        title="CV de Adrián M. Llop Recha"
+        class="cv-frame"
+      ></iframe>
+    </div>
+  </div>
+</div>
+
+<script>
+  const openCvBtn = document.getElementById("openCvBtn");
+  const closeCvBtn = document.getElementById("closeCvBtn");
+  const cvModal = document.getElementById("cvModal");
+  const cvModalBackdrop = document.getElementById("cvModalBackdrop");
+
+  function openCvModal() {
+    cvModal.classList.add("is-open");
+    cvModal.setAttribute("aria-hidden", "false");
+    document.body.classList.add("modal-open");
+  }
+
+  function closeCvModal() {
+    cvModal.classList.remove("is-open");
+    cvModal.setAttribute("aria-hidden", "true");
+    document.body.classList.remove("modal-open");
+  }
+
+  openCvBtn.addEventListener("click", openCvModal);
+  closeCvBtn.addEventListener("click", closeCvModal);
+  cvModalBackdrop.addEventListener("click", closeCvModal);
+
+  document.addEventListener("keydown", function (event) {
+    if (event.key === "Escape" && cvModal.classList.contains("is-open")) {
+      closeCvModal();
+    }
+  });
+</script>
+
+</body>
+</html>
